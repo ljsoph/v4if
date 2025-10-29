@@ -1,6 +1,6 @@
 ## v4if
 
-Get minimal info about IPv4 network interfaces on (my Linux) machines.
+Get minimal info about IPv4 network interfaces on (my) Linux and (my) Windows machines.
 
 **Example**
 ```rust
