@@ -8,7 +8,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let interfaces = v4if::interfaces()?;
 
     for interface in interfaces {
-        if interface.is_lower_up() {
+        if interface.is_up() && !interface.is_loopback() {
             println!("{interface:#?}");
         }
     }
