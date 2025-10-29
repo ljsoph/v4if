@@ -138,7 +138,6 @@ pub mod winders {
                     Some(ifaddrs),
                     &mut buffer_size,
                 );
-                dbg!(family, ifaddrs, buffer_size, res);
 
                 match WIN32_ERROR(res) {
                     ERROR_SUCCESS => break,
